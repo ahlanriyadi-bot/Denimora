@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" width="100%" height="100%">
+  <defs>
+    <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#60a5fa" />
+      <stop offset="100%" stop-color="#93c5fd" />
+    </linearGradient>
+  </defs>
+  <g transform="translate(10, 12)">
+    <!-- Denim Pocket Icon -->
+    <path d="M0 5 C0 2, 2 0, 5 0 L45 0 C48 0, 50 2, 50 5 L50 35 C50 48, 25 56, 25 56 C25 56, 0 48, 0 35 Z" fill="#1e3a8a" stroke="#60a5fa" stroke-width="2"/>
+    <path d="M8 8 L42 8 L42 32 C42 42, 25 48, 25 48 C25 48, 8 42, 8 32 Z" fill="none" stroke="#fbbf24" stroke-width="1.5" stroke-dasharray="3,2"/>
+    <!-- Rivet dots -->
+    <circle cx="5" cy="5" r="2.5" fill="#f59e0b"/>
+    <circle cx="45" cy="5" r="2.5" fill="#f59e0b"/>
+    <text x="25" y="32" fill="#ffffff" font-family="'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="900" text-anchor="middle">D</text>
+
+    <!-- Wordmark -->
+    <text x="68" y="35" fill="url(#logoGrad)" font-family="'Segoe UI', Roboto, sans-serif" font-size="28" font-weight="900" letter-spacing="3.5">DENIMORA</text>
+    <text x="70" y="50" fill="#94a3b8" font-family="'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="600" letter-spacing="3">WEAR YOUR IDENTITY</text>
+  </g>
+</svg>
