@@ -6,13 +6,20 @@ use App\Http\Controllers\Admin\ProductController as AdminProductController;
 use App\Http\Controllers\CatalogController;
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\ProductController;
 
 /*
 |--------------------------------------------------------------------------
 | Web Routes - DENIMORA E-Commerce Fashion Denim
 |--------------------------------------------------------------------------
 */
+Route::get('/', function () {
+    return view('welcome');
+});
 
+Route::resource('categories', CategoryController::class);
+Route::resource('products', ProductController::class);
 // Halaman Publik (Frontend)
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/products', [CatalogController::class, 'index'])->name('products.index');

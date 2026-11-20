@@ -1,38 +1,25 @@
 <?php
-
 namespace Database\Seeders;
 
-use App\Models\Category;
 use Illuminate\Database\Seeder;
+use App\Models\Category;
 
 class CategorySeeder extends Seeder
 {
-    /**
-     * Run the database seeds.
-     */
     public function run(): void
     {
         $categories = [
-            [
-                'name' => 'Jeans',
-                'description' => 'Koleksi celana jeans denim berkualitas tinggi dengan potongan straight, slim, hingga loose fit untuk kenyamanan harian.',
-            ],
-            [
-                'name' => 'Jackets',
-                'description' => 'Jaket denim bergaya klasik dan modern, mulai dari trucker jacket hingga oversized denim jacket dengan bahan kokoh.',
-            ],
-            [
-                'name' => 'Shirts',
-                'description' => 'Kemeja denim bertekstur lembut dan breathable, cocok untuk gaya kasual, semi-formal, maupun layering.',
-            ],
-            [
-                'name' => 'Shorts',
-                'description' => 'Celana pendek denim santai dengan daya tahan maksimal untuk aktivitas outdoor dan akhir pekan.',
-            ],
+            ['name' => 'Denim Jeans', 'description' => 'Berbagai pilihan celana jeans denim.'],
+            ['name' => 'Denim Jacket', 'description' => 'Koleksi jaket denim modern.'],
+            ['name' => 'Denim Shirt', 'description' => 'Kemeja denim dengan desain stylish.'],
+            ['name' => 'Denim Shorts', 'description' => 'Celana pendek denim untuk gaya kasual.'],
         ];
 
-        foreach ($categories as $cat) {
-            Category::firstOrCreate(['name' => $cat['name']], $cat);
+        foreach ($categories as $category) {
+            Category::firstOrCreate(
+                ['name' => $category['name']],
+                ['description' => $category['description']]
+            );
         }
     }
 }
